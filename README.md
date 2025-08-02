@@ -24,3 +24,15 @@ git clone https://github.com/MazenHassan10/ITI-ALEX-Summer-Internship-second-tas
 cd ITI-ALEX-Summer-Internship-second-task.git
 npm install
 ```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run the development server
+
+```bash
+npm run dev
+```

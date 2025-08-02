@@ -49,13 +49,13 @@ function App() {
   };
 
   return (
-    <div className="grid place-content-center h-[100vh] w-[100vw] bg-background">
+    <div className="grid place-content-center h-[100vh] w-[100vw] bg-primary-foreground">
       <div className="w-[70vw] p-4">
         <Input
           value={newTask}
           onChange={handleInputChange}
-          onKeyPress={handleKeyPress}
-          className="bg-primary-foreground"
+          onKeyDown={handleKeyPress}
+          className="bg-secondary"
           placeholder="Create New Task"
           type="text"
         />
@@ -66,12 +66,12 @@ function App() {
         {tasks.map((task) => (
           <div
             key={task.id}
-            className="p-2 flex justify-between items-center bg-secondary rounded-md my-2"
+            className="p-2 flex justify-between items-center bg-background rounded-md my-2"
           >
             <div className="flex items-center gap-2">
               <div className="flex items-center">
                 <Checkbox
-                  className="bg-background"
+                  className="bg-secondary"
                   checked={task.completed}
                   onCheckedChange={() => toggleTask(task.id)}
                 />
